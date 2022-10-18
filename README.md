@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/spaziutempu](https://github.com/spaziutempu/advice-generator-app)
+- Solution URL: [https://github.com/spaziutempu/advice-generator-app](https://github.com/spaziutempu/advice-generator-app)
 - Live Site URL: [https://adorable-platypus-b682b3.netlify.app](https://adorable-platypus-b682b3.netlify.app/)
 
 ### Built with
