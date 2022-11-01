@@ -15,5 +15,6 @@ function newAdvice() {
     })
     .catch((err) => console.log(err));
 }
-newAdvice();
 button.addEventListener("click", newAdvice);
+
+newAdvice();

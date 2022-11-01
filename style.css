@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
 
+:root {
+  --green: hsl(150, 100%, 66%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,26 +13,28 @@ body {
   min-height: 100vh;
 
   background: hsl(218, 23%, 16%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   color: hsl(193, 38%, 86%);
   font-family: "Manrope", sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   margin: auto;
+  padding: 1.5em 1.5em 0;
 
-  display: flex;
-  align-items: center;
   max-width: 375px;
   min-width: 150px;
   width: 95%;
+
+  display: flex;
   flex-direction: column;
+
+  align-items: center;
+
   background: hsl(217, 19%, 24%);
 
-  padding: 1.5em 1.5em 0;
   z-index: 2;
 
   border-radius: 25px;
@@ -51,12 +57,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 0;
-  color: hsl(150, 100%, 66%);
+  color: var(--green);
 }
 
 .advice_phrase {
   font-size: 1.75em;
   font-weight: 800;
+  margin-bottom: 0.8em;
 }
 
 /********
@@ -64,19 +71,20 @@ button
 ********/
 
 .advice_btn {
+  width: 5em;
+  height: 5em;
+
   margin-bottom: -2.5em;
   z-index: 1;
 
-  width: 5em;
-  height: 5em;
   border-radius: 50%;
-
   border: none;
 
-  background: hsl(150, 100%, 66%);
-  cursor: pointer;
-  transition: 250ms;
+  background: var(--green);
   box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  transition: all 250ms;
 }
 
 .btn_blur:hover {
@@ -87,16 +95,20 @@ button
   transform: scale(1.1);
 }
 
+/***** 
+svg
+*****/
+
 .advice_divider {
   display: block;
   max-width: 95%;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
-.advice_divider_mobile {
+.divider_mobile {
   display: block;
 }
-.advice_divider_desktop {
+.divider_desktop {
   display: none;
 }
 
@@ -109,16 +121,10 @@ media queries
     max-width: 700px;
   }
 
-  .advice_divider {
-    display: block;
-    max-width: 95%;
-    margin-bottom: 1.3em;
-  }
-  .advice_divider_mobile {
+  .divider_mobile {
     display: none;
   }
-  .advice_divider_desktop {
-    padding-top: 0.75em;
+  .divider_desktop {
     display: block;
   }
 }

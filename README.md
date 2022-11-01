@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
@@ -39,13 +39,13 @@ Users should be able to:
 
 ### What I learned & What's next
 
-- How to reuse fetch
+- How to re-use fetch
 
 ```js
 fetch("https://api.adviceslip.com/advice").then((res) => res.json());
 ```
 
-- need to deep dive into API;
+- need to deep dive into API to be good with;
 
 ## Author
 
